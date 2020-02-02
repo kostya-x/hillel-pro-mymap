@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>map realisation</title>
+</head>
+<body>
+  <script>
+    function myMap(arr, callback) {
+      var newArr = new Array();
+
+      for (i = 0; i < arr.length; i++) {
+        newArr[i] = callback(arr[i]);
+      }
+
+      return newArr;
+    }
+  </script>
+</body>
+</html>
